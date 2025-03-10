@@ -13,8 +13,13 @@ dist-ssr
 *.local
 .env
 
+SUPABASE_SETUP_INSTRUCTIONS.md
+SUPABASE_CONFIG_GOOGLE.md
 
-
+# Duplicate or incomplete Supabase files
+complete_schema.sql
+supabase/auth_setup.sql
+supabase/storage_setup.sql
 
 # Editor directories and files
 .vscode/*
