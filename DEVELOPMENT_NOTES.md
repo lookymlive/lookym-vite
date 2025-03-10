@@ -3,6 +3,22 @@
 
 Este documento contiene información detallada sobre la configuración y el proceso de desarrollo de la aplicación Lookym. Servirá como una guía de referencia para futuros desarrollos y para que otras IAs puedan entender el contexto del proyecto.
 
+## Archivos de Configuración SQL
+
+### Archivos Principales
+
+- **supabase_setup_script.sql**: Este es el archivo principal y completo para configurar la base de datos de Supabase. Contiene todas las tablas, políticas de seguridad, triggers y funciones necesarias.
+
+- **create_buckets.sql**: Script para crear los buckets de almacenamiento necesarios para la aplicación (videos y avatars).
+
+### Nota Importante
+
+Los siguientes archivos son versiones parciales o duplicadas y NO deben utilizarse:
+
+- ~~complete_schema.sql~~ (duplicado de supabase_setup_script.sql)
+- ~~supabase/auth_setup.sql~~ (versión parcial e incompleta)
+- ~~supabase/storage_setup.sql~~ (versión parcial, usar create_buckets.sql en su lugar)
+
 ## Configuración de Autenticación con Supabase y Google
 
 ### 1. Integración con Supabase
