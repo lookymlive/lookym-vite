@@ -158,10 +158,10 @@ export const Navbar = () => {
                 transition={{ duration: 0.5 }}
                 className="w-8 h-8 rounded-full bg-brand-purple flex items-center justify-center"
               >
-                <span className="text-white text-sm font-bold">C</span>
+                <span className="text-white text-sm font-bold">L</span>
               </motion.div>
               <span className="text-xl font-bold hidden sm:inline-block">
-                CommerceVidHub
+                LOOKYM
               </span>
             </Link>
 
