@@ -33,18 +33,22 @@ Esta guía proporciona instrucciones paso a paso para configurar la autenticaci�
 3. Selecciona "Aplicación web" como tipo de aplicación
 4. Asigna un nombre a tu cliente OAuth
 5. Configura los orígenes JavaScript autorizados:
+
    ```
    http://localhost:5173
    http://localhost:8080
    https://[tu-dominio-de-produccion.com]
    ```
+
 6. Configura las URIs de redirección autorizados:
+
    ```
    https://[tu-proyecto-id].supabase.co/auth/v1/callback
    http://localhost:5173/auth/callback
    http://localhost:8080/auth/callback
    https://[tu-dominio-de-produccion.com]/auth/callback
    ```
+
 7. Haz clic en "Crear"
 8. Guarda el **ID de cliente** y el **Secreto del cliente** que se generan
 
@@ -66,19 +70,25 @@ Esta guía proporciona instrucciones paso a paso para configurar la autenticaci�
 
 1. En el menú lateral, navega a "Authentication" > "URL Configuration"
 2. Configura la Site URL (URL de tu aplicación):
-   ```
+
+   ```plaintext
    http://localhost:5173
    ```
+
    o para producción:
-   ```
+
+   ```plaintext
    https://[tu-dominio-de-produccion.com]
    ```
+
 3. Configura las Redirect URLs:
+
    ```
    http://localhost:5173/auth/callback
    http://localhost:8080/auth/callback
    https://[tu-dominio-de-produccion.com]/auth/callback
    ```
+
 4. Guarda la configuración
 
 ## 3. Configuración en la aplicación React
@@ -297,6 +307,7 @@ Al solucionar problemas de autenticación con Google en Supabase, verifica estos
 3. **Scopes de OAuth**: Confirma que los scopes necesarios (email, profile, openid) estén habilitados en Google Cloud Console
 
 4. **Formato de callback**: El formato correcto para la URL de callback es:
+
    ```
    https://[tu-proyecto-id].supabase.co/auth/v1/callback
    ```
